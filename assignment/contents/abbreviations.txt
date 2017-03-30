@@ -1,3 +1,4 @@
+\acro{ADAS}{Advanced Driver Assistance Systems}
 \acro{ARP}{Address Resolution Protocol}
 \acro{CSMA/CD}{Carrier Sense Multiple Access/Collision Detection}
 \acro{CPU}{Central Processing Unit}
