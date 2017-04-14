@@ -1,0 +1,11 @@
+1) ---------------------------------------------------------
+
+@ARTICLE {,
+    author   = "Ali Mousavi",
+    title    = "Project Control \& Management",
+    journal  = "Lecture 3",
+    year     = "2017",
+    crossref = "http://people.brunel.ac.uk/~emstaam/"
+}
+
+2) ---------------------------------------------------------
