@@ -1,0 +1,114 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Audi Espana}()]{AudiEspana}
+{Audi Espana}.
+\newblock Driving out of a parking space parallel to the roadside.
+\newblock URL \url{https://www.youtube.com/watch?v=G3oO0objPlc}.
+\newblock Accessed: 02.03.17.
+
+\bibitem[Bertoncello and Wee(2015)]{McKinsey}
+M.~Bertoncello and D.~Wee.
+\newblock Ten ways autonomous driving could redefine the automotive world, jun
+  2015.
+\newblock URL
+  \url{http://www.mckinsey.com/industries/automotive-and-assembly/our-insights/ten-ways-autonomous-driving-could-redefine-the-automotive-world}.
+\newblock Accessed: 06.03.17.
+
+\bibitem[Braun and Katsev(2004)]{Braun}
+A.~Braun and S.~Katsev.
+\newblock Autonomous parallel parking, apr 2004.
+\newblock URL
+  \url{http://slidegur.com/doc/3930571/autonomous-parallel-parking-alex-braun-and-sergey-katsev}.
+\newblock Accessed: 04.03.17.
+
+\bibitem[{Daimler AG}(2015)]{DaimlerValet}
+{Daimler AG}.
+\newblock Daimler and bosch automate parking: Mercedes with built in valet, sep
+  2015.
+\newblock URL
+  \url{http://media.daimler.com/marsMediaSite/en/instance/ko/Daimler-and-Bosch-automate-parking-Mercedes-with-built-in-va.xhtml?oid=9919967}.
+\newblock Accessed: 06.03.17.
+
+\bibitem[{Daimler AG}(2016)]{DaimlerParkingPilot}
+{Daimler AG}.
+\newblock Mercedes-benz techcenter: Parking pilot, 2016.
+\newblock URL
+  \url{http://techcenter.mercedes-benz.com/en/parking-pilot/detail.html}.
+\newblock Accessed: 05.03.17.
+
+\bibitem[Doloczki and Gaubitz(2015)]{Doloczki}
+R.~Doloczki and D.~K. Gaubitz.
+\newblock Rc-car automatisiertes ausparken, 2015.
+\newblock URL
+  \url{http://www.mechatroniktechniker-nuernberg.de/projektarbeiten-2014-2015/rccar?showall=\&limitstart}.
+\newblock Accessed: 04.03.17.
+
+\bibitem[{Lincoln Motor Company}(2014)]{Lincoln}
+{Lincoln Motor Company}.
+\newblock Active park assist with park out assist, may 2014.
+\newblock URL \url{https://www.youtube.com/watch?v=G3oO0objPlc}.
+\newblock Accessed: 02.03.17.
+
+\bibitem[{Robert Bosch GmbH}(2013{\natexlab{a}})]{Bosch2013}
+{Robert Bosch GmbH}.
+\newblock Parking assistance systems, sep 2013{\natexlab{a}}.
+\newblock URL
+  \url{http://www.bosch-presse.de/pressportal/de/en/parking-assistance-systems-42313.html}.
+\newblock Accessed: 01.03.17.
+
+\bibitem[{Robert Bosch GmbH}(2013{\natexlab{b}})]{BoschFully}
+{Robert Bosch GmbH}.
+\newblock Fully automated parking, sep 2013{\natexlab{b}}.
+\newblock URL
+  \url{http://www.bosch.com/en/com/boschglobal/automated_driving/technology_for_greater_safety/pagination_1.html}.
+\newblock Accessed: 01.03.17.
+
+\bibitem[{Robert Bosch GmbH}(2016)]{BoschHomeZone}
+{Robert Bosch GmbH}.
+\newblock Accident-free parking: Bosch home zone park assist technology makes
+  anyone a parking expert, jun 2016.
+\newblock URL
+  \url{http://us.bosch-press.com/tbwebdb/bosch-usa/en-US/PressText.cfm?CFID=60601650\&CFTOKEN=23b02ff4f9992373-1108C7B6-E03B-C6E5-077B127D808AAA01\&Search=1\&id=726}.
+\newblock Accessed: 04.03.17.
+
+\bibitem[{Statistica Inc.}()]{StatisticaADAS}
+{Statistica Inc.}
+\newblock Global adas unit shipments in 2012 and 2020 (in millions).
+\newblock URL
+  \url{https://www.statista.com/statistics/429190/global-shipments-of-advanced-driver-assistance-systems/}.
+\newblock Accessed: 06.03.17.
+
+\bibitem[{Tesla Inc.}(2016)]{TeslaSummon}
+{Tesla Inc.}
+\newblock Summon improvements, 2016.
+\newblock URL
+  \url{https://www.tesla.com/sites/default/files/Model_S_release_notes_7_1_1_us_cn.pdf}.
+\newblock Accessed: 02.03.17.
+
+\bibitem[{Volvo Cars Support}(2016)]{VolvoCarsSupport}
+{Volvo Cars Support}.
+\newblock Parking with active parking assistance, 2016.
+\newblock URL
+  \url{http://support.volvocars.com/uk/cars/Pages/owners-manual.aspx?mc=v526\&my=2016\&sw=15w46\&article=0de24dc68976be2bc0a801513c7e085c}.
+\newblock Accessed: 28.02.17.
+
+\bibitem[West and Grant(2010)]{forrester}
+D.~West and T.~Grant.
+\newblock Agile development: Mainstream adoption has changed agility.
+\newblock \emph{Application Development \& Program Management Professional},
+  jan 2010.
+\newblock URL
+  \url{http://programmedevelopment.com/public/uploads/files/forrester_agile_development_mainstream_adoption_has_changed_agility.pdf}.
+
+\bibitem[Young(2004)]{Young}
+R.~R. Young.
+\newblock \emph{The Requirements Engineering Handbook}, chapter The Importance
+  of Requirements.
+\newblock Artech House Inc., 2004.
+
+\end{thebibliography}

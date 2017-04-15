@@ -1,0 +1,36 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: document.aux
+The style file: abbrvnat.bst
+Illegal, another \bibdata command---line 177 of file document.aux
+ : \bibdata
+ :         {resources}
+I'm skipping whatever remains of this command
+Database file #1: resources.bib
+Warning--entry type for "VolvoCarsSupport" isn't style-file defined
+--line 1 of file resources.bib
+Warning--entry type for "Lincoln" isn't style-file defined
+--line 8 of file resources.bib
+Warning--entry type for "AudiEspana" isn't style-file defined
+--line 17 of file resources.bib
+Warning--entry type for "TeslaSummon" isn't style-file defined
+--line 23 of file resources.bib
+Warning--entry type for "Bosch2013" isn't style-file defined
+--line 31 of file resources.bib
+Warning--entry type for "BoschFully" isn't style-file defined
+--line 40 of file resources.bib
+Warning--entry type for "BoschHomeZone" isn't style-file defined
+--line 49 of file resources.bib
+Warning--entry type for "Braun" isn't style-file defined
+--line 58 of file resources.bib
+Warning--entry type for "Doloczki" isn't style-file defined
+--line 67 of file resources.bib
+Warning--entry type for "McKinsey" isn't style-file defined
+--line 75 of file resources.bib
+Warning--entry type for "StatisticaADAS" isn't style-file defined
+--line 84 of file resources.bib
+Warning--entry type for "DaimlerValet" isn't style-file defined
+--line 91 of file resources.bib
+Warning--entry type for "DaimlerParkingPilot" isn't style-file defined
+--line 100 of file resources.bib
+Warning--empty year in AudiEspana
+Warning--empty year in StatisticaADAS
+(There was 1 error message)
