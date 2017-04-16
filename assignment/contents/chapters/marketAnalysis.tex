@@ -1,13 +1,17 @@
 An important step in the development of a new product is to analyse the market.
 This analysis not only includes the identification of competitors and their offered
 technologies, but also the investigation of the demand on the product to develop
-and its future progression.
+and its future progression. Another part of the market analysis is to determine
+which hardware might be necessary for the product to develop. After the
+identification of the needed parts, the offered products on the market are
+compared regarding their capabilities and their price.
 
+\section{Analysis of Competitors}
 The subsequent analysis is done in an indirect way so that the presented
 information is retrieved by querying the internet and putting altogether the
 relevant information.
 
-\section{Current Systems implemented in today's Cars}
+\subsection{Current Systems implemented in today's Cars}
 There are only a few systems available that help the driver in leaving a parking
 space. These systems exhibit a huge variety of autonomy. The manufacturers
 Volvo, Audi and Lincoln sheet park assistance systems that take control over the
@@ -26,7 +30,7 @@ Tesla offers the Summon functionality implemented in its Model S and Model X. It
 allows a driver to leave its car and park as well as retrieve it autonomously.
 This feature is restricted to perpendicular parking only (see \cite{TeslaSummon}).
 
-\section{Current Systems available from Suppliers}
+\subsection{Current Systems available from Suppliers}
 
 The development of systems assisting a driver in parking and leaving a parking
 lot can be illustrated by the evolution of the products originating from Robert
@@ -43,7 +47,7 @@ the starting point of the route to drive and the one of the recorded route is
 slightly different.
 On its trained way, the car is able to detect impediments and to react to them.
 
-\section{Scientific Projects}
+\subsection{Scientific Projects}
 There exist several projects that target on the functionality of autonomously
 parking to and leaving from a parking lot.
 While the work of Katsev and Braun (see
@@ -55,7 +59,7 @@ that autonomously leaves a parking space (see
 To achieve their goal, Doloczki and Gaubitz use ultrasonic and infrared sensors
 to sense the environment around parked vehicle.
 
-\section{Development of the market}
+\subsection{Development of the market}
 It is obvious that the demand on systems that perform certain manoeuvres
 autonomously will increase with the success of autonomous cars. But also in the
 meantime till these cars make the breakthrough, there might be an increased need
@@ -78,7 +82,7 @@ autonomously leaving its parking site. A research project targeting on Valet
 Parking was announced by Daimler, Bosch and Car2go in the year 2015 (see
 \cite {DaimlerValet}).
 
-\section{Conclusion}
+\subsection{Conclusion}
 It has been worked out that the systems that are implemented in today’s cars are
 less sophisticated than the system that is planned to develop. Additionally, the
 increasing need for ADAS like park assistants has been exposed. However, there
@@ -87,3 +91,74 @@ to be overcome by additional functionality or improved safety and reliability.
 The major competitor in this sector will be the Robert Bosch GmbH that already
 demonstrated its product with a real vehicle and that is working together with a
 lot of important car manufacturers like Daimler or Audi.
+
+\section{Market Analysis regarding the needed Hardware}
+
+
+\begin{table}
+\centering
+\captionsetup{justification=centering}
+\footnotesize
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{p{0.3\textwidth}|p{0.35\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}}
+Product & Key Features & Price & Retailer \\
+\hline
+SICK UM18-218161101 
+& Range: 0.12 - 1.0m \newline 
+	operation temp.: -25\degree C - 70\degree C \newline 
+	Switching freq.: 10Hz 
+& 152.32\$ 
+& \cite{tme} \\
+PING))) Ultrasonic Distance Sensor 
+& Range: 0.02 - 3m \newline 
+	operation temp.: 0\degree C - 70\degree C  \newline 
+	Switching freq.: 10Hz 
+& 24.99\$ 
+& \cite{parallax}\\
+LV-MaxSonar-EZ1 
+& Range: 0.0 – 6.45m\newline 
+	operation temp.: -  \newline 
+	Switching freq.: 20Hz  
+& 23.36\$ 
+& \cite{sparkfun} \\
+AU003 
+& Range: 0.08 - 1.2m\newline 
+	operation temp.: -20 \degree C - 70 \degree C  \newline 
+	Switching freq.: 5Hz  
+& 112.94\$ 
+& \cite{autosen} \\
+\end{tabular}
+\caption{Compared Ultrasonic Distance Sensors}
+\label{tab:ultrasonic}
+\end{table}
+
+\begin{table}
+\centering
+\captionsetup{justification=centering}
+\footnotesize
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{p{0.3\textwidth}|p{0.35\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}}
+Product & Key Features & Price & Retailer \\
+\hline
+OID200 - OIDLCPKG/US
+& Range: 0.03 - 2.0m \newline 
+	operation temp.: -25\degree C - 60\degree C \newline 
+	Switching freq.: 11Hz 
+& 115.69\$ 
+& \cite{automation24} \\
+Lidar Lite v3
+& Range: up to 40m \newline 
+	operation temp.: -20\degree C - 60\degree C  \newline 
+	Switching freq.: 10Hz 
+& 159.15\$ 
+& \cite{sparkfun2}\\
+AL003 
+& Range: 0.03 – 2m\newline 
+	operation temp.: -25\degree C - 60\degree C \newline 
+	Switching freq.: 11Hz  
+& 110.05\$ 
+& \cite{autosen2} \\
+\end{tabular}
+\caption{Compared Laser Distance Sensors}
+\label{tab:laser}
+\end{table}
