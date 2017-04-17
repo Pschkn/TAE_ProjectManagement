@@ -72,9 +72,48 @@ is no more retrieved by the system, the process should be interrupted.
 \label{fig:ContextDiagram}
 \end{figure}
 
-\section{Activity Diagram}
+\section{Activity Diagrams}
 
-\subsection{Activity Diagram Perpendicular Parking}
+Nachdem in den vorangegangen Kapiteln sowohl die Use cases als auch die
+beteiligten Sensoren beschrieben wurden wird in diesem Kapitel der ablauf des
+Perpendicular parking und des Parallel parking mithilfe von activity diagrammen
+beschrieben. Ein activity diagram visualisiert die Dynamik und das Verhalten des
+systems und trägt somit zu einem besseren Verständnis des prozessablaufes bei. 
+
+\subsection{Activity Diagram Reverse Perpendicular Parking}
+
+Beim verlassen einer Perpendicular Parksituation gibt es verschiedene Fälle zu
+betrachten die das System beinflussen können bzw daran hindern können gefahrlos
+auszuparken. Ausserdem gibt es verschiedene Ausgangslagen, in welcher sich das
+Fahrzeug befinden kann bevor der Ausparkvorgang gestartet wird. Zu diesem
+Zweck wird im folgenden der Best- und der Worst Case der Ausgangslagen
+beschrieben. Der Prozessablauf kann Figure \ref{fig:ActivityPerpendicular}
+entnommen werden.
+
+\begin{itemize}
+\item \textbf{Best Case} \newline
+Beim Best Case handelt es sich um eine Ausgangslage, bei welcher sich kein
+Obstacle auf der fahrerseite des Fahrzeuges befindet. Dies wird mithilfe der
+Sensoren des Fahrzeuges ermittelt. Der Gruund hierfür ist es, dass beim
+rückwärtigen Ausparken das Fahrzeug direkt einlenken und zurücksetzen kann.
+Dabei ist es für den Reverse Perpendicular Parking Vorgang nicht von Bedeutung
+ob sich ein Obstacle auf der Beifahrer seite befindent, da dies den
+Ausparkvorgang nicht beeinträchtigt. Es wird nun solange zurückgesetzt, bis das
+Fahrzeug die Fahrbahn mithilfe der Kamera erkennt. Ausserdem wird zusätzlich
+geprüft, ob sich ein Fahrzeug, Fahrrad oder eine Person auf der Fahrbahn befindet. Falls dies der
+Fall ist stoppt das Fahrzeug und wartet bis das Hinderniss beseitigt ist.
+Befindet sich kein Hinderniss auf der Fahrbahn kann der Ausparkvorgang
+fortgesetzt und beendet werden.
+\item \textbf{Worst Case} \newline
+Beim Schlechtfall handelt es sich um eine Ausgangslage, bei welcher fahrerseitig
+ein Obstacle befindet. Dadurch verändert sich der Ablauf des Prozesses, denn es
+kann nun nicht mehr sofort eingelenkt werden sondern es muss zuerst
+zurückgesetzt werden. Hierbei wird auch wieder darauf geachtet, dass sich keine
+Person, Fahrrad oder Fahrzeug auf der Fahrbahn befindet. Es wird solange
+zurückgesetzt bis fahrereseitig kein Hinderniss mehr von den Sensoren erkannt
+wird. Anschließend kann das Fahrzeug wieder einlenken und der darauf folgende
+Ablauf ist identisch, wie der beim Best Case.
+\end{itemize}
 
 \begin{figure}
 \centering
@@ -85,6 +124,35 @@ is no more retrieved by the system, the process should be interrupted.
 \end{figure}
 
 \subsection{Activity Diagram Parallel Parking}
+
+Auch beim verlassen einer Parallel Parksituation gibt es wiederum verschiedene
+Ausgangslagen zu betrachten, die das System beinflussen können bzw daran hindern
+können gefahrlos auszuparken. Analoge zum Reverse Perpendicular Parking wird im
+folgenden der Best- und der Worst Case der Ausgangslagen beschrieben. 
+Der Prozessablauf kann Figure \ref{fig:ActivityParallel} entnommen werden.
+
+\begin{itemize}
+\item \textbf{Best Case} \newline
+In diesem Szenario ist der Best Case der, in welchem sich kein Hinderniss vor
+dem Fahrzeug befindet. Dadurch kann das Fahrzeug direkt so einlenken, dass die
+Reifen weg vom Bordstein zeigen und anschließend Vorwärtsfahren. Beim
+Vorwärtsfahren wird weiterhin geprüft, ob sich kein Hinderniss vor dem Fahrzeug
+befindet. Es wird nun solange Vorwärts gefahren, bis die Kamera die Fahrbahn
+erkennt. Ausserdem wird geprüft, dass sich keine Hindernisse auf der Fahrbahn
+befinden. Ist dies der Fall so wird der Ausparkvorgang beendet. Andernfalls
+stoppt das Fahrzeug und setzt erst mit dem Ausparkvorgang fort, sobald das
+Hinderniss weg ist.
+\item \textbf{Worst Case} \newline
+Im Schlechtfall befindet sich sowohl vor dem Fahrzeug als auch hinter dem
+Fahrzeug jeweils ein Obstacle. Dies bedeutet das Fahrzeug setzt soweit zurück
+bis es einen minimalen Abstand zum Hinderniss hat. Anschließend dreht es die
+Räder vom Bordstein weg und fährt vorwärts. Erkennt das Fahrzeug nun ein
+Hinderniss vor sich, so hält es an, dreht seine Räder zum Bordstein hin und
+fährt rückwärts. Dies tut es wiederum solange bis es kurz vor dem rückwärtigen
+Hinderniss steht. Anschließend werden die Räder wieder vom Bordstein weggedreht
+und solange vorwärts gefahren bis die Straße erkennt wird. Der folgende Ablauf
+des Ausparkprozesses ist wiederum identisch zum Best Case.
+\end{itemize}
 
 \begin{figure}
 \centering
