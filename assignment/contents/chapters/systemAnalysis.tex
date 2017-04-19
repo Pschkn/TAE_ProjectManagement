@@ -1,4 +1,11 @@
-TODO: There should be some blabla. 
+In the present section, the steps that were taken in analysing the system to
+develop are described. After the use cases and the necessary sensors are
+determined, ythe system’s context could be bounded. At the end of the chapter,
+the necessary algorithms will be presented with the help of activity diagrams.
+
+The presented system analysis does not lay a claim on completeness but it
+reflects all the standardised methods of analysing a system that were estimated
+helpful in order to develop the system.
 
 \section{Use Case Diagram}
 
@@ -26,6 +33,7 @@ sensors and control systems.
 \end{figure}
 
 \section{Sensor Overview}
+\label{sect:sensors}
 To support the presented use cases, the system needs an overview of the cars
 surrounding. Six sensors, two of them cameras and 4 of them distance sensors,
 are placed in the car to provide this overview. The placement of the sensors can be
@@ -73,47 +81,23 @@ is no more retrieved by the system, the process should be interrupted.
 \end{figure}
 
 \section{Activity Diagrams}
+After the previous sections presented the use cases as well as the involved
+sensors and actuators, the current section presents the progress of leaving from
+a perpendicular and a parallel parking situation. This presentation is done with
+the help of activity diagrams that reflect the algorithm that has to be
+implemented. Activity diagrams visualise the dynamics and the behaviour of a
+system and therefore serve for a better understanding of the process.
 
-Nachdem in den vorangegangen Kapiteln sowohl die Use cases als auch die
-beteiligten Sensoren beschrieben wurden wird in diesem Kapitel der ablauf des
-Perpendicular parking und des Parallel parking mithilfe von activity diagrammen
-beschrieben. Ein activity diagram visualisiert die Dynamik und das Verhalten des
-systems und trägt somit zu einem besseren Verständnis des prozessablaufes bei. 
 
 \subsection{Activity Diagram Reverse Perpendicular Parking}
-
-Beim verlassen einer Perpendicular Parksituation gibt es verschiedene Fälle zu
-betrachten die das System beinflussen können bzw daran hindern können gefahrlos
-auszuparken. Ausserdem gibt es verschiedene Ausgangslagen, in welcher sich das
-Fahrzeug befinden kann bevor der Ausparkvorgang gestartet wird. Zu diesem
-Zweck wird im folgenden der Best- und der Worst Case der Ausgangslagen
-beschrieben. Der Prozessablauf kann Figure \ref{fig:ActivityPerpendicular}
-entnommen werden.
-
-\begin{itemize}
-\item \textbf{Best Case} \newline
-Beim Best Case handelt es sich um eine Ausgangslage, bei welcher sich kein
-Obstacle auf der fahrerseite des Fahrzeuges befindet. Dies wird mithilfe der
-Sensoren des Fahrzeuges ermittelt. Der Gruund hierfür ist es, dass beim
-rückwärtigen Ausparken das Fahrzeug direkt einlenken und zurücksetzen kann.
-Dabei ist es für den Reverse Perpendicular Parking Vorgang nicht von Bedeutung
-ob sich ein Obstacle auf der Beifahrer seite befindent, da dies den
-Ausparkvorgang nicht beeinträchtigt. Es wird nun solange zurückgesetzt, bis das
-Fahrzeug die Fahrbahn mithilfe der Kamera erkennt. Ausserdem wird zusätzlich
-geprüft, ob sich ein Fahrzeug, Fahrrad oder eine Person auf der Fahrbahn befindet. Falls dies der
-Fall ist stoppt das Fahrzeug und wartet bis das Hinderniss beseitigt ist.
-Befindet sich kein Hinderniss auf der Fahrbahn kann der Ausparkvorgang
-fortgesetzt und beendet werden.
-\item \textbf{Worst Case} \newline
-Beim Schlechtfall handelt es sich um eine Ausgangslage, bei welcher fahrerseitig
-ein Obstacle befindet. Dadurch verändert sich der Ablauf des Prozesses, denn es
-kann nun nicht mehr sofort eingelenkt werden sondern es muss zuerst
-zurückgesetzt werden. Hierbei wird auch wieder darauf geachtet, dass sich keine
-Person, Fahrrad oder Fahrzeug auf der Fahrbahn befindet. Es wird solange
-zurückgesetzt bis fahrereseitig kein Hinderniss mehr von den Sensoren erkannt
-wird. Anschließend kann das Fahrzeug wieder einlenken und der darauf folgende
-Ablauf ist identisch, wie der beim Best Case.
-\end{itemize}
+When leaving a perpendicular parking situation, there exist different cases
+affecting the process that have to be analysed. This cases might impede the
+system from successfully performing its action. Additionally, there are
+different starting situations a car might be in before starting the process of
+leaving a parking space. To analyse these cases and to develop an algorithm that
+is able to deal with the possible cases and starting situations, the Best- as
+well as the Worst-Case for the system are described.  The activity diagram of
+the whole process can be seen in figure \ref{fig:ActivityPerpendicular}.
 
 \begin{figure}
 \centering
@@ -123,44 +107,80 @@ Ablauf ist identisch, wie der beim Best Case.
 \label{fig:ActivityPerpendicular}
 \end{figure}
 
+\subsubsection{Best Case}
+The initial situation of the best case is the situation of there being no
+obstacle on the driver’s side. The presence or absence of an obstacle is
+determined with the help of the car’s sensors that have been introduced in
+section \ref{sect:sensors}.
+
+If there is no obstacle on the driver’s side, the car is able to turn its wheels
+in the needed direction and start to drive backwards. For the case of leaving a
+reverse perpendicular parking situation it is of no importance if there is an
+obstacle on the passenger side because this won’t affect the process of leaving
+the parking space.
+
+The car now drives backwards till the moment it recognizes the roadway with the
+help of the built-in camera. Additionally, the roadway is scanned for moving
+obstacles like other cars, bicycles or persons during the whole process. If such
+an obstacle is detected, the car stops and waits for the moving obstacle to
+leave the safety-critical area. If there is no obstacle, if the detected
+obstacle has disappeared of it has stopped approaching the car, the process can
+be resumed and be completed.
+
+
+\subsubsection{Worst Case}
+In opposition to the previously described initial situation, the worst case is
+given if there is an obstacle on the driver’s side. The process then changes in
+a way that the car has firstly to drive back some distance before it can turn
+its wheels safely without the risk of there being a crash with the detected
+obstacle.
+
+In the same way as it was described for the best case, the car scans its
+surroundings while driving backwards if there are moving obstacles. In the case
+of there being none of the possible obstacles, the car drives back until the
+obstacle on the driver’s side is no more critical to the process and the car is
+able to safely turn its wheels. The process that follows is now identical to the
+previously described best case.
+
 \subsection{Activity Diagram Parallel Parking}
-
-Auch beim verlassen einer Parallel Parksituation gibt es wiederum verschiedene
-Ausgangslagen zu betrachten, die das System beinflussen können bzw daran hindern
-können gefahrlos auszuparken. Analoge zum Reverse Perpendicular Parking wird im
-folgenden der Best- und der Worst Case der Ausgangslagen beschrieben. 
-Der Prozessablauf kann Figure \ref{fig:ActivityParallel} entnommen werden.
-
-\begin{itemize}
-\item \textbf{Best Case} \newline
-In diesem Szenario ist der Best Case der, in welchem sich kein Hinderniss vor
-dem Fahrzeug befindet. Dadurch kann das Fahrzeug direkt so einlenken, dass die
-Reifen weg vom Bordstein zeigen und anschließend Vorwärtsfahren. Beim
-Vorwärtsfahren wird weiterhin geprüft, ob sich kein Hinderniss vor dem Fahrzeug
-befindet. Es wird nun solange Vorwärts gefahren, bis die Kamera die Fahrbahn
-erkennt. Ausserdem wird geprüft, dass sich keine Hindernisse auf der Fahrbahn
-befinden. Ist dies der Fall so wird der Ausparkvorgang beendet. Andernfalls
-stoppt das Fahrzeug und setzt erst mit dem Ausparkvorgang fort, sobald das
-Hinderniss weg ist.
-\item \textbf{Worst Case} \newline
-Im Schlechtfall befindet sich sowohl vor dem Fahrzeug als auch hinter dem
-Fahrzeug jeweils ein Obstacle. Dies bedeutet das Fahrzeug setzt soweit zurück
-bis es einen minimalen Abstand zum Hinderniss hat. Anschließend dreht es die
-Räder vom Bordstein weg und fährt vorwärts. Erkennt das Fahrzeug nun ein
-Hinderniss vor sich, so hält es an, dreht seine Räder zum Bordstein hin und
-fährt rückwärts. Dies tut es wiederum solange bis es kurz vor dem rückwärtigen
-Hinderniss steht. Anschließend werden die Räder wieder vom Bordstein weggedreht
-und solange vorwärts gefahren bis die Straße erkennt wird. Der folgende Ablauf
-des Ausparkprozesses ist wiederum identisch zum Best Case.
-\end{itemize}
+Leaving a parallel parking situation also includes different initial situations
+that have to be reflected. Analogously to the process of reverse perpendicular
+parking, the best- and the worst case are described within this section. The
+activity diagram of the whole process can be retrieved from figure
+\ref{fig:ActivityParallel}.
 
 \begin{figure}
-\centering
 \captionsetup{justification=centering}
 \includegraphics[width=\textwidth]{res/systemAnalysis/ActivityObstacleLenghtwise.png}
 \caption{Algorithm for leaving a parallel Parking Situation}
 \label{fig:ActivityParallel}
 \end{figure}
+
+\subsubsection{Best Case}
+The best case in the current scenario is given if there is no obstacle in front
+of the car that should be brought out from a parallel parking situation. In this
+case, the car is able to turn its wheels towards the road side and to drive
+forward safely. During the process of driving forwards, the system continuously
+checks if there are either obstacles occurring in front of it or approaching
+from the roadside. If an obstacle is detected, the process is again stopped and
+only resumed if the detected obstacles have disappeared or if they do not
+approach anymore.
+
+\subsubsection{Worst Case}
+The worst case is characterised by there being an obstacle both in front and
+behind the car that should be brought out of the parking lot. The car then
+starts to drive slowly backwards until it has reached the minimum safety
+distance to the obstacle behind it. The wheels are then turned towards the
+roadside and the car starts to drive forwards.
+
+In the case that the car then detects an obstacle in front of it, it stops,
+turns its wheels towards the curbs and starts to drive backwards. It continues
+with its motion till it reaches the minimum safety distance either to the rear
+obstacle or to the curbs. The car then turns it wheels to the roadside again and
+drives forwards. These steps are repeated until the car is able to leave the
+parallel parking situation and detects the roadway. Within the whole process,
+the car’s surroundings are again checked for steady and for moving obstacles
+respectively.
 
 \section{Design Sketches}
 
