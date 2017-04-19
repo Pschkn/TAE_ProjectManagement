@@ -83,7 +83,7 @@ Parking was announced by Daimler, Bosch and Car2go in the year 2015 (see
 \cite {DaimlerValet}).
 
 \subsection{Conclusion}
-It has been worked out that the systems that are implemented in today’s cars are
+It has been worked out that the systems that are implemented in today's cars are
 less sophisticated than the system that is planned to develop. Additionally, the
 increasing need for ADAS like park assistants has been exposed. However, there
 are other scientific projects that aim on the same kind of system and that have
@@ -93,7 +93,16 @@ demonstrated its product with a real vehicle and that is working together with a
 lot of important car manufacturers like Daimler or Audi.
 
 \section{Market Analysis regarding the needed Hardware}
+The product to develop is based on the recognition of obstacles in the vehicle's
+surroundings. The most common used sensors to gain an overview of the ambiance
+are ultrasonic and laser sensors as well as cameras. Some representatives of
+these sensors are presented and compared in this chapter.
 
+\subsection{Comparison of Ultrasonic Distance Sensors }
+There exist a lot of ultrasonic distance sensors on the market that are intended
+to be used in automotive applications. The chosen representatives of these all
+exhibit a detection range of $1m$ or above. Their switching frequency, operation
+temperature and price are compared in table \ref{tab:ultrasonic}.
 
 \begin{table}
 \centering
@@ -116,7 +125,7 @@ PING))) Ultrasonic Distance Sensor
 & 24.99\$ 
 & \cite{parallax}\\
 LV-MaxSonar-EZ1 
-& Range: 0.0 – 6.45m\newline 
+& Range: 0.0 - 6.45m\newline 
 	operation temp.: -  \newline 
 	Switching freq.: 20Hz  
 & 23.36\$ 
@@ -132,6 +141,17 @@ AU003
 \label{tab:ultrasonic}
 \end{table}
 
+While the low-cost sensors are appropriate for a proof of concept, they are not
+suitable for an application under real conditions because either their operation
+temperature lies only above freezing or it is not indicated in the datasheets.
+The prices of the high-cost sensors are based on the ordering of small amounts
+and might be renegotiated if higher volumes are commissioned.
+
+\section{Comparison of Laser Distance Sensors}
+Laser distance sensors are especially popular in the context of the obstacle
+detection that is implemented by Google's self-driving car (see \cite{whitwam}).
+Different representatives of this kind of sensor are contrasted in table
+\ref{tab:laser}.
 \begin{table}
 \centering
 \captionsetup{justification=centering}
@@ -161,4 +181,69 @@ AL003
 \end{tabular}
 \caption{Compared Laser Distance Sensors}
 \label{tab:laser}
+\end{table}
+
+All of the presented sensors are designed for the use in automotive applications
+and therefore fulfil the requirements for our project. In contrast to the
+ultrasonic sensors, there are no low-cost laser distance sensors that are
+suitable for the use in a proof of concept.
+
+\subsection{Review on available Camera Sensors}
+Comparing available camera sensors on the market is very difficult. Most of the
+available sensors are designed to be used in model making. The prices of the
+ones that are intended for automotive applications (e.g. sensors of Ambarella
+and ON Semiconductor) have to be inquired from the manufacturers. Table
+\ref{tab:camera} shows two camera sensors that are suitable for a proof of
+concept that could also be tested under the condition of extreme temperatures.
+
+\begin{table}
+\centering
+\captionsetup{justification=centering}
+\footnotesize
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{p{0.3\textwidth}|p{0.35\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}}
+Product & Key Features & Price & Retailer \\
+\hline
+32KM NTSC
+& Resolution: 0.35MP \newline 
+	operation temp.: -20\degree C - 70\degree C \newline 
+	Scanning freq.: 60Hz, \newline
+	night vision: no, \newline
+	angle: up to 120\degree
+& 31.95\$ 
+& \cite{sparkfun3} \\
+LinkSprite JPEG Color Camera TTL Interface - Infrared
+& Resolution: 0.3MP \newline 
+	operation temp.: -20\degree C - 70\degree C \newline 
+	Scanning freq.: 60Hz, \newline
+	night vision: yes, \newline
+	angle: up to 120\degree
+& 49.95\$ 
+& \cite{sparkfun4}
+\end{tabular}
+\caption{Sampled Camera Sensors}
+\label{tab:camera}
+\end{table}
+
+\subsection{Calculation of Costs}
+If a hardware proof of concept is implemented, the costs can be calculated like
+it is done in table \ref{tab:costs}. The amount of sensors that are used in a
+final system and the actual prices might differt in the moment of the
+system's realisation.
+
+\begin{table}
+\centering
+\captionsetup{justification=centering}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{llll}
+Part & Price/Unit & Pcs & Sum \\
+\hline
+32KM NTSC & 31.95\$ & 2 & 63.90\$ \\
+LV-MaxSonar-EZ1 & 23.36\$ & 4 & 93.44\$ \\
+ Arduino Mega 2560 & 37.18\$ & 1 & 37.18\$ \\ 
+\hline
+Total & & & 194.52\$
+\end{tabular}
+\caption{Calculation of Costs for a POC}
+\label{tab:costs}
 \end{table}
