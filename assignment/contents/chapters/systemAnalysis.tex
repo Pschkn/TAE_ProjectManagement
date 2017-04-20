@@ -1,7 +1,12 @@
 In the present section, the steps that were taken in analysing the system to
-develop are described. After the use cases and the necessary sensors are
-determined, ythe system’s context could be bounded. At the end of the chapter,
-the necessary algorithms will be presented with the help of activity diagrams.
+develop are described. These steps include:
+
+\begin{itemize}
+\item{Determination of the system's use cases}
+\item{Investigation of the required sensors}
+\item{Bounding of the system's context}
+\item{Visualisation of the needed algorithms via activity diagrams}
+\end{itemize}
 
 The presented system analysis does not lay a claim on completeness but it
 reflects all the standardised methods of analysing a system that were estimated
@@ -11,7 +16,7 @@ helpful in order to develop the system.
 
 Based on the requirements that were agreed on with the customer, two main use
 cases of the system can be found:
-
+\newpage
 \begin{itemize}
 \item{Drive out of a perpendicular Parking Lot}
 \item{Drive out of a parallel Parking Lot}
@@ -39,7 +44,7 @@ surrounding. Six sensors, two of them cameras and 4 of them distance sensors,
 are placed in the car to provide this overview. The placement of the sensors can be
 retrieved from figure \ref{fig:SensorOverview}.
 
-The sensors that are placed in the middle of the car’s front and rear are
+The sensors that are placed in the middle of the car's front and rear are
 cameras. In many cases cameras are already integrated in the car and provide the
 user a realistic image of its surrounding. The distance sensors at the corners
 of the bumpers might be radar- or ultrasonic-sensors. Radar sensors have the
@@ -62,13 +67,13 @@ Dataflows are depicted with solid arrows while signals that are used to control
 the systems are sketched with dashed arrows.
 
 Beside the sensor information, the graphical representation of the process and
-the information that is sent to the car’s control systems, there exist two
+the information that is sent to the car's control systems, there exist two
 systems that are used to interrupt the process of leaving a parking lot. If a
 driver sits in the car and presses the break pedal, the process will be
 interrupted immediately and the driver will regain the control over its vehicle.
 If the whole process is controlled remotely without the driver sitting in its
 car, the external application that controls the process should act as a dead
-man’s switch that is operated by the user. If the signal from this application
+man's switch that is operated by the user. If the signal from this application
 is no more retrieved by the system, the process should be interrupted.
 
 
@@ -109,14 +114,14 @@ the whole process can be seen in figure \ref{fig:ActivityPerpendicular}.
 
 \subsubsection{Best Case}
 The initial situation of the best case is the situation of there being no
-obstacle on the driver’s side. The presence or absence of an obstacle is
-determined with the help of the car’s sensors that have been introduced in
+obstacle on the driver's side. The presence or absence of an obstacle is
+determined with the help of the car's sensors that have been introduced in
 section \ref{sect:sensors}.
 
-If there is no obstacle on the driver’s side, the car is able to turn its wheels
+If there is no obstacle on the driver's side, the car is able to turn its wheels
 in the needed direction and start to drive backwards. For the case of leaving a
 reverse perpendicular parking situation it is of no importance if there is an
-obstacle on the passenger side because this won’t affect the process of leaving
+obstacle on the passenger side because this won't affect the process of leaving
 the parking space.
 
 The car now drives backwards till the moment it recognizes the roadway with the
@@ -130,7 +135,7 @@ be resumed and be completed.
 
 \subsubsection{Worst Case}
 In opposition to the previously described initial situation, the worst case is
-given if there is an obstacle on the driver’s side. The process then changes in
+given if there is an obstacle on the driver's side. The process then changes in
 a way that the car has firstly to drive back some distance before it can turn
 its wheels safely without the risk of there being a crash with the detected
 obstacle.
@@ -138,7 +143,7 @@ obstacle.
 In the same way as it was described for the best case, the car scans its
 surroundings while driving backwards if there are moving obstacles. In the case
 of there being none of the possible obstacles, the car drives back until the
-obstacle on the driver’s side is no more critical to the process and the car is
+obstacle on the driver's side is no more critical to the process and the car is
 able to safely turn its wheels. The process that follows is now identical to the
 previously described best case.
 
@@ -179,18 +184,18 @@ with its motion till it reaches the minimum safety distance either to the rear
 obstacle or to the curbs. The car then turns it wheels to the roadside again and
 drives forwards. These steps are repeated until the car is able to leave the
 parallel parking situation and detects the roadway. Within the whole process,
-the car’s surroundings are again checked for steady and for moving obstacles
+the car's surroundings are again checked for steady and for moving obstacles
 respectively.
 
 \section{Design Sketches}
 
 A first design sketch has been developed (see figure \ref{fig:initialMockup})
-and the customer’s feedback on the design has been gathered, this feedback is
+and the customer's feedback on the design has been gathered, this feedback is
 used to create refined mockups. Since the customer requests two designs -- one
 for the day and one for the night-mode -- two of these refined designs are
 developed.
 
-These newly designed mockups also take the customer’s feedback into account that
+These newly designed mockups also take the customer's feedback into account that
 some outputs should be simplified and that the area where the sensor information
 is presented should not be reduced. Instead, the area presenting the aerial view
 is reduced and the sensor information are presented in a wider area.
