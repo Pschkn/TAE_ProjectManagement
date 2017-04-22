@@ -7,9 +7,12 @@ identification of the needed parts, the offered products on the market are
 compared regarding their capabilities and their price.
 
 \section{Analysis of Competitors}
-The subsequent analysis is done in an indirect way so that the presented
-information is retrieved by querying the internet and putting altogether the
-relevant information.
+The analysis of competitors provides an overview of the available products on
+the market, of their capabilities and of how widely these products are already
+used. The following analysis is done by querying the internet and putting
+altogether the relevant information. It not only focuses on well-known
+manufacturers but also on scientific projects that might be in competition with
+our company.
 
 \subsection{Current Systems implemented in today's Cars}
 There are only a few systems available that help the driver in leaving a parking
@@ -17,16 +20,16 @@ space. These systems exhibit a huge variety of autonomy. The manufacturers
 Volvo, Audi and Lincoln sheet park assistance systems that take control over the
 steering wheel when leaving a parking lot (see \cite{VolvoCarsSupport},
 \cite{Lincoln} and \cite{AudiEspana}). While the steering is done autonomously, 
-the driver has to manually operate the pedals.
+the driver has to operate the pedals on its own.
 This kind of systems is mostly restricted to parallel parking.
 
 Mercedes-Benz offers a more autonomous, but also more restricted way of assisted
-parking. The “Mercedes Benz Parking Pilot” is able to park and leave the parking
+parking. The Mercedes-Benz ``Parking Pilot'' is able to park and leave a parking
 site autonomously. The quitting of the parking site is restricted to those
 scenarios in which the Parking Pilot was also used to park the car (see
 \cite{DaimlerParkingPilot}).
 
-Tesla offers the Summon functionality implemented in its Model S and Model X. It
+Tesla offers the ``Summon'' functionality implemented in its Model S and Model X. It
 allows a driver to leave its car and park as well as retrieve it autonomously.
 This feature is restricted to perpendicular parking only (see \cite{TeslaSummon}).
 
@@ -35,31 +38,32 @@ This feature is restricted to perpendicular parking only (see \cite{TeslaSummon}
 The development of systems assisting a driver in parking and leaving a parking
 lot can be illustrated by the evolution of the products originating from Robert
 Bosch GmbH. While the early systems act as it was described for the
-manufacturers Volvo, Audi and Bosch (see \cite{Bosch2013}
-),
- the current systems are now able to drive itself into and back out of a parking
+manufacturers Volvo, Audi and Bosch (see \cite{Bosch2013}),
+ the current systems are now able to drive a car into and back out of a parking
 site autonomously (see \cite{BoschFully}). Another future application of park
-assistants is the “Bosch Home Zone Park Assist”. It enables a driver to train its car for certain parking situations
+assistants is the Bosch ``Home Zone Park Assist''. It enables a driver to train its car for certain parking situations
 (see 
 \cite{BoschHomeZone}).
 The car records a route that is driven and it is able to reproduce it even if
-the starting point of the route to drive and the one of the recorded route is
+the starting point of the route to drive and the one of the recorded route are
 slightly different.
 On its trained way, the car is able to detect impediments and to react to them.
 
 \subsection{Scientific Projects}
-There exist several projects that target on the functionality of autonomously
-parking to and leaving from a parking lot.
-While the work of Katsev and Braun (see
- \cite{Braun})
- that already started in 2004 seems not to have reached the point where leaving a parking lot is implemented since no further resources can be found on that project,
-Roland Doloczki and Don Kevin Gaubitz produced a working prototype of RC-Car
+The earliest work on the current topic that could be found is the one of
+\cite{Braun}. This team presents some analytical work as well on the system
+design as on the necessary hardware to implement the desired functionality. In
+addition, they also provide a detailed analysis on the structure of the needed
+algorithms.
+
+While it couldn't be determined if this project was brought to termination,
+Roland Doloczki and Don Kevin Gaubitz produced a working prototype of an RC-Car
 that autonomously leaves a parking space (see
 \cite{Doloczki}).
-To achieve their goal, Doloczki and Gaubitz use ultrasonic and infrared sensors
+To achieve their goal, Doloczki and Gaubitz used ultrasonic and infrared sensors
 to sense the environment around parked vehicle.
 
-\subsection{Development of the market}
+\section{Future Development of the market}
 It is obvious that the demand on systems that perform certain manoeuvres
 autonomously will increase with the success of autonomous cars. But also in the
 meantime till these cars make the breakthrough, there might be an increased need
@@ -67,36 +71,26 @@ for \acf{ADAS} like parking assistants. Following
 McKinsey Inc., there will be three eras in the revolution of self-driving cars
 (see \cite{McKinsey}).
 The first era, starting from now and lasting till the late 2020s, is
-characterised by the first autonomous vehicles being produced and their impact
-on established car manufacturers. McKinsey states that the premium makers will
-take an incremental approach to autonomous vehicles by implementing more
+characterised by the first autonomous vehicles being produced and by their
+impact on the established car manufacturers. McKinsey states that the premium
+makers will take an incremental approach to autonomous vehicles by implementing more
 sophisticated ADAS. This assumption is supported by Statista, assuming that the
 shipment of ADAS units will increase by more than 500\% in the time from 2012 to
 2020 (see \cite{StatisticaADAS}).
 
-One of the buzz word regarding future driver assistance systems is “Valet
-Parking” which means that a car parks itself after the driver has left it and
+One of the buzz words regarding future driver assistance systems is ``Valet
+Parking'' which means that a car parks itself after the driver has left it and
 that the car can be retrieved from its parking position without active control
-of the driver. Therefore, Valet Parking needs the possibility of a car
-autonomously leaving its parking site. A research project targeting on Valet
-Parking was announced by Daimler, Bosch and Car2go in the year 2015 (see
+of the driver. Therefore, ``Valet Parking'' needs the possibility of a car
+autonomously leaving its parking site. A research project targeting on this
+technology was announced by Daimler, Bosch and Car2go in the year 2015 (see
 \cite {DaimlerValet}).
-
-\subsection{Conclusion}
-It has been worked out that the systems that are implemented in today's cars are
-less sophisticated than the system that is planned to develop. Additionally, the
-increasing need for ADAS like park assistants has been exposed. However, there
-are other scientific projects that aim on the same kind of system and that have
-to be overcome by additional functionality or improved safety and reliability.
-The major competitor in this sector will be the Robert Bosch GmbH that already
-demonstrated its product with a real vehicle and that is working together with a
-lot of important car manufacturers like Daimler or Audi.
 
 \section{Market Analysis regarding the needed Hardware}
 The product to develop is based on the recognition of obstacles in the vehicle's
-surroundings. The most common used sensors to gain an overview of the ambiance
-are ultrasonic and laser sensors as well as cameras. Some representatives of
-these sensors are presented and compared in this chapter.
+surroundings. The most common used sensors to gain an overview of a car's
+ambiance are ultrasonic and laser sensors as well as cameras. Some representatives of
+these sensors are introduced and compared in this chapter.
 
 \subsection{Comparison of Ultrasonic Distance Sensors }
 There exist a lot of ultrasonic distance sensors on the market that are intended
@@ -114,25 +108,25 @@ Product & Key Features & Price & Retailer \\
 \hline
 SICK UM18-218161101 
 & Range: 0.12 - 1.0m \newline 
-	operation temp.: -25\degree C - 70\degree C \newline 
+	Operation temp.: -25\degree C - 70\degree C \newline 
 	Switching freq.: 10Hz 
 & 152.32\$ 
 & \cite{tme} \\
 PING))) Ultrasonic Distance Sensor 
 & Range: 0.02 - 3m \newline 
-	operation temp.: 0\degree C - 70\degree C  \newline 
+	Operation temp.: 0\degree C - 70\degree C  \newline 
 	Switching freq.: 10Hz 
 & 24.99\$ 
 & \cite{parallax}\\
 LV-MaxSonar-EZ1 
 & Range: 0.0 - 6.45m\newline 
-	operation temp.: -  \newline 
+	Operation temp.: -  \newline 
 	Switching freq.: 20Hz  
 & 23.36\$ 
 & \cite{sparkfun} \\
 AU003 
 & Range: 0.08 - 1.2m\newline 
-	operation temp.: -20 \degree C - 70 \degree C  \newline 
+	Operation temp.: -20 \degree C - 70 \degree C  \newline 
 	Switching freq.: 5Hz  
 & 112.94\$ 
 & \cite{autosen} \\
@@ -147,7 +141,7 @@ temperature lies only above freezing or it is not indicated in the datasheets.
 The prices of the high-cost sensors are based on the ordering of small amounts
 and might be renegotiated if higher volumes are commissioned.
 
-\section{Comparison of Laser Distance Sensors}
+\subsection{Comparison of Laser Distance Sensors}
 Laser distance sensors are especially popular in the context of the obstacle
 detection that is implemented by Google's self-driving car (see \cite{whitwam}).
 Different representatives of this kind of sensor are contrasted in table
@@ -162,19 +156,19 @@ Product & Key Features & Price & Retailer \\
 \hline
 OID200 - OIDLCPKG/US
 & Range: 0.03 - 2.0m \newline 
-	operation temp.: -25\degree C - 60\degree C \newline 
+	Operation temp.: -25\degree C - 60\degree C \newline 
 	Switching freq.: 11Hz 
 & 115.69\$ 
 & \cite{automation24} \\
 Lidar Lite v3
 & Range: up to 40m \newline 
-	operation temp.: -20\degree C - 60\degree C  \newline 
+	Operation temp.: -20\degree C - 60\degree C  \newline 
 	Switching freq.: 10Hz 
 & 159.15\$ 
 & \cite{sparkfun2}\\
 AL003 
 & Range: 0.03 – 2m\newline 
-	operation temp.: -25\degree C - 60\degree C \newline 
+	Operation temp.: -25\degree C - 60\degree C \newline 
 	Switching freq.: 11Hz  
 & 110.05\$ 
 & \cite{autosen2} \\
@@ -194,7 +188,8 @@ available sensors are designed to be used in model making. The prices of the
 ones that are intended for automotive applications (e.g. sensors of Ambarella
 and ON Semiconductor) have to be inquired from the manufacturers. Table
 \ref{tab:camera} shows two camera sensors that are suitable for a proof of
-concept that could also be tested under the condition of extreme temperatures.
+concept and that could also be tested under the condition of extreme
+temperatures. 
 
 \begin{table}
 \centering
@@ -206,7 +201,7 @@ Product & Key Features & Price & Retailer \\
 \hline
 32KM NTSC
 & Resolution: 0.35MP \newline 
-	operation temp.: -20\degree C - 70\degree C \newline 
+	Operation temp.: -20\degree C - 70\degree C \newline 
 	Scanning freq.: 60Hz, \newline
 	night vision: no, \newline
 	angle: up to 120\degree
@@ -214,7 +209,7 @@ Product & Key Features & Price & Retailer \\
 & \cite{sparkfun3} \\
 LinkSprite JPEG Color Camera TTL Interface - Infrared
 & Resolution: 0.3MP \newline 
-	operation temp.: -20\degree C - 70\degree C \newline 
+	Operation temp.: -20\degree C - 70\degree C \newline 
 	Scanning freq.: 60Hz, \newline
 	night vision: yes, \newline
 	angle: up to 120\degree
@@ -225,11 +220,12 @@ LinkSprite JPEG Color Camera TTL Interface - Infrared
 \label{tab:camera}
 \end{table}
 
+\newpage
 \subsection{Calculation of Costs}
 If a hardware proof of concept is implemented, the costs can be calculated like
 it is done in table \ref{tab:costs}. The amount of sensors that are used in a
-final system and the actual prices might differt in the moment of the
-system's realisation.
+final system and the actual prices might differ in the moment of the
+system's final realisation.
 
 \begin{table}
 \centering
@@ -247,3 +243,26 @@ Total & & & 194.52\$
 \caption{Calculation of Costs for a POC}
 \label{tab:costs}
 \end{table}
+
+\section{Conclusion}
+The analysis of our company's competitors worked out that the planned product is
+more sophisticated than those systems that are used in today's cars.
+Nevertheless, the idea of autonomously leaving a parking space is not new and
+there has been some research in this area at least since 2004.
+
+The Robert Bosch GmbH is estimated to be the major competitor to our company
+since they are well connected to important car manufacturers like Audi and
+Mercedes-Benz. Bosch is involved in research projects that target on ``Valet
+Parking'' and it also already demonstrated a product that is similar to the one
+of our company using a real car. Due to the prognostication of the market's
+development, there might however be the possibility to get a significant
+market-share if the competitors like Bosch could be overcome by additional
+functionality or improved safety and reliability.
+
+The investigation of available hardware on the market gave a first estimation of
+how much a hardware proof of concept might cost. It is certainly difficult to
+derive the costs of the final product from this estimation since the used prices
+pertain to the ordering of a small amount of sensors. Especially in the case of
+camera sensors, there have to be some inquiries to the sensors' manufacturers to
+get additional information about the capabilities and the prices of the offered
+sensors.
