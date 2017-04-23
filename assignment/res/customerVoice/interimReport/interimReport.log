@@ -1,7 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.22)  19 APR 2017 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.23)  22 APR 2017 19:43
 entering extended mode
-**./interimReport.tex
-(interimReport.tex
+**D:/EigeneDateien/MScDCSE/pm/assignment/res/customerVoice/interimReport/interi
+mReport.tex
+
+(D:/EigeneDateien/MScDCSE/pm/assignment/res/customerVoice/interimReport/interim
+Report.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
@@ -745,29 +748,31 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \f@ncyO@olf=\skip63
 \f@ncyO@orf=\skip64
 )
-No file interimReport.aux.
+(D:/EigeneDateien/MScDCSE/pm/assignment/res/customerVoice/interimReport\interim
+Report.aux)
 \openout1 = `interimReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Info: Redefining \celsius on input line 65.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Info: Redefining \celsius on input line 67.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 67.
+
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 65.
-Package gensymb Info: Using \Omega for \ohm on input line 65.
+LaTeX Info: Redefining \ohm on input line 67.
+Package gensymb Info: Using \Omega for \ohm on input line 67.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -834,7 +839,7 @@ ABD: EveryShipout initializing macros
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.14} into 
 your preamble.
- on input line 65.
+ on input line 67.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
@@ -843,77 +848,80 @@ Package caption Info: End \AtBeginDocument code.
 <logo.png, id=4, 590.205pt x 590.205pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 68.
+Package pdftex.def Info: logo.png used on input line 70.
 (pdftex.def)             Requested size: 117.00119pt x 116.99423pt.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 86.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
-LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
+LaTeX Font Info:    Try loading font information for U+msa on input line 86.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+LaTeX Font Info:    Try loading font information for U+msb on input line 86.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 5741) in paragraph at lines 96--96
-[]\OT1/cmr/bx/n/14.4 Cost Es-tim-a-tion for a
- []
+) [1
 
-[1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo.png>]
+{C:/Users/Timo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <D:/EigeneDat
+eien/MScDCSE/pm/assignment/res/customerVoice/interimReport/logo.png>]
 <ContextDiagram.png, id=15, 762.85pt x 461.725pt>
 File: ContextDiagram.png Graphic file (type png)
  <use ContextDiagram.png>
-Package pdftex.def Info: ContextDiagram.png used on input line 114.
+Package pdftex.def Info: ContextDiagram.png used on input line 116.
 (pdftex.def)             Requested size: 175.49881pt x 106.22269pt.
+
+Underfull \hbox (badness 5970) in paragraph at lines 115--117
+\OT1/cmr/m/n/12 lysis in a sep-ar-ate doc-u-ment.
+ []
 
 <brightskin.png, id=16, 961.5925pt x 619.31375pt>
 File: brightskin.png Graphic file (type png)
  <use brightskin.png>
-Package pdftex.def Info: brightskin.png used on input line 119.
+Package pdftex.def Info: brightskin.png used on input line 123.
 (pdftex.def)             Requested size: 175.49881pt x 113.0309pt.
 
-Overfull \hbox (3.12363pt too wide) in paragraph at lines 119--120
+Overfull \hbox (13.12363pt too wide) in paragraph at lines 123--124
 [][] 
  []
 
 <darkskin.png, id=17, 960.58875pt x 617.30624pt>
 File: darkskin.png Graphic file (type png)
  <use darkskin.png>
-Package pdftex.def Info: darkskin.png used on input line 121.
+Package pdftex.def Info: darkskin.png used on input line 127.
 (pdftex.def)             Requested size: 175.49881pt x 112.77754pt.
 
-Overfull \hbox (3.12363pt too wide) in paragraph at lines 121--122
+Overfull \hbox (13.12363pt too wide) in paragraph at lines 127--128
 [][] 
  []
 
-[2 <./ContextDiagram.png (PNG copy)> <./brightskin.png> <./darkskin.png>]
-(interimReport.aux) ) 
+[2 <D:/EigeneDateien/MScDCSE/pm/assignment/res/customerVoice/interimReport/Cont
+extDiagram.png (PNG copy)> <D:/EigeneDateien/MScDCSE/pm/assignment/res/customer
+Voice/interimReport/brightskin.png> <D:/EigeneDateien/MScDCSE/pm/assignment/res
+/customerVoice/interimReport/darkskin.png>] (interimReport.aux) ) 
 Here is how much of TeX's memory you used:
- 26806 strings out of 493334
- 652190 string characters out of 3139246
- 828255 words of memory out of 3000000
+ 26809 strings out of 493334
+ 652579 string characters out of 3139254
+ 832255 words of memory out of 3000000
  29842 multiletter control sequences out of 15000+200000
  11195 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,14n,98p,734b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on interimReport.pdf (2 pages, 1049291 bytes).
+ 69i,14n,98p,803b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb>
+Output written on interimReport.pdf (2 pages, 1050470 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
