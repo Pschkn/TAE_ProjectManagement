@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-02-20" view-index="0" gantt-divider-location="403" resource-divider-location="300" version="2.8.4" locale="de_DE">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2016-11-28" view-index="0" gantt-divider-location="361" resource-divider-location="332" version="2.8.4" locale="de">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd3" name="Vorgang" width="202" order="0"/>
-        <field id="tpd4" name="Anfang" width="98" order="1"/>
-        <field id="tpd5" name="Ende" width="99" order="2"/>
+        <field id="tpd3" name="Vorgang" width="234" order="0"/>
+        <field id="tpd4" name="Anfang" width="68" order="1"/>
+        <field id="tpd5" name="Ende" width="55" order="2"/>
+        <option id="color.recent"><![CDATA[#9999ff #009966 #66ff66]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Ressource" width="210" order="0"/>
-        <field id="1" name="Rolle" width="86" order="1"/>
+        <field id="0" name="Ressource" width="226" order="0"/>
+        <field id="1" name="Rolle" width="102" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -33,54 +34,215 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="3" name="Initial planning" color="#8cb6ce" meeting="false" start="2016-12-01" duration="12" complete="0" expand="true">
-            <task id="13" name="Specify customer requirements" color="#8cb6ce" meeting="false" start="2016-12-01" duration="1" complete="0" expand="true"/>
-            <task id="53" name="Define scope" color="#8cb6ce" meeting="false" start="2016-12-01" duration="1" complete="0" expand="true"/>
-            <task id="5" name="Define tasks" color="#8cb6ce" meeting="false" start="2016-12-02" duration="1" complete="0" expand="true"/>
-            <task id="6" name="Create time plan" color="#8cb6ce" meeting="false" start="2016-12-05" duration="1" complete="0" expand="true"/>
-            <task id="15" name="Create resource plan" color="#8cb6ce" meeting="false" start="2016-12-09" duration="1" complete="0" expand="true"/>
-            <task id="55" name="Define task tracking mechanism" color="#8cb6ce" meeting="false" start="2016-12-12" duration="1" complete="0" expand="true"/>
+        <task id="3" name="Initial planning" color="#8cb6ce" meeting="false" project="true" start="2016-12-01" duration="9" complete="0" expand="true">
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+            <depend id="27" type="2" difference="0" hardness="Strong"/>
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+            <depend id="30" type="2" difference="0" hardness="Strong"/>
+            <depend id="32" type="2" difference="0" hardness="Strong"/>
+            <depend id="35" type="2" difference="0" hardness="Strong"/>
+            <depend id="36" type="2" difference="0" hardness="Strong"/>
+            <depend id="37" type="2" difference="0" hardness="Strong"/>
+            <depend id="39" type="2" difference="0" hardness="Strong"/>
+            <depend id="43" type="2" difference="0" hardness="Strong"/>
+            <depend id="57" type="2" difference="0" hardness="Strong"/>
+            <depend id="59" type="2" difference="0" hardness="Strong"/>
+            <task id="13" name="Specify customer requirements" color="#8cb6ce" meeting="false" start="2016-12-01" duration="1" complete="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+                <depend id="41" type="2" difference="0" hardness="Strong"/>
+                <depend id="50" type="2" difference="0" hardness="Strong"/>
+                <depend id="53" type="2" difference="0" hardness="Strong"/>
+                <depend id="59" type="2" difference="0" hardness="Strong"/>
+                <depend id="64" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="53" name="Define scope" color="#8cb6ce" meeting="false" start="2016-12-02" duration="1" complete="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+                <depend id="41" type="2" difference="0" hardness="Strong"/>
+                <depend id="50" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" name="Define tasks" color="#8cb6ce" meeting="false" start="2016-12-03" duration="1" complete="0" expand="true">
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+                <depend id="55" type="2" difference="0" hardness="Strong"/>
+                <depend id="108" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" name="Create time plan" color="#8cb6ce" meeting="false" start="2016-12-04" duration="1" complete="0" expand="true">
+                <depend id="55" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" name="Create resource plan" color="#8cb6ce" meeting="false" start="2016-12-09" duration="1" complete="0" thirdDate="2016-12-09" thirdDate-constraint="1" expand="true"/>
+            <task id="55" name="Define task tracking mechanism" color="#8cb6ce" meeting="false" start="2016-12-05" duration="1" complete="0" expand="true"/>
+            <task id="108" name="Resouce allocation" color="#8cb6ce" meeting="false" start="2016-12-05" duration="3" complete="0" thirdDate="2016-12-05" thirdDate-constraint="1" expand="true"/>
         </task>
-        <task id="19" name="Project management" meeting="false" start="2017-02-27" duration="11" complete="0" expand="true">
-            <task id="22" name="Resouce allocation" color="#8cb6ce" meeting="false" start="2017-02-27" duration="2" complete="0" expand="true"/>
-            <task id="21" name="Market analysis" color="#8cb6ce" meeting="false" start="2017-03-02" duration="4" complete="0" expand="true"/>
-            <task id="28" name="Process flow and critical path" color="#8cb6ce" meeting="false" start="2017-03-02" duration="2" complete="0" expand="true"/>
-            <task id="23" name="Cost analysis" color="#8cb6ce" meeting="false" start="2017-03-07" duration="3" complete="0" expand="true"/>
-            <task id="27" name="Risk analysis" color="#8cb6ce" meeting="false" start="2017-03-06" duration="4" complete="0" expand="true"/>
+        <task id="19" name="Project management" color="#000000" meeting="false" start="2016-12-10" duration="92" complete="0" expand="true">
+            <depend id="45" type="2" difference="0" hardness="Strong"/>
+            <task id="21" name="Market analysis" color="#8cb6ce" meeting="false" start="2017-03-08" duration="4" complete="0" thirdDate="2017-03-08" thirdDate-constraint="1" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="28" name="Process flow and critical path" color="#8cb6ce" meeting="false" start="2016-12-10" duration="3" complete="0" expand="true"/>
+            <task id="23" name="Cost analysis" color="#8cb6ce" meeting="false" start="2016-12-10" duration="3" complete="0" expand="true"/>
+            <task id="27" name="Risk analysis" color="#8cb6ce" meeting="false" start="2016-12-10" duration="2" complete="0" expand="true"/>
         </task>
-        <task id="30" name="Customer satisfaction" meeting="false" start="2017-03-30" duration="8" complete="0" expand="true">
-            <task id="32" name="Create first satistica form" color="#8cb6ce" meeting="false" start="2017-03-30" duration="1" complete="0" expand="true"/>
-            <task id="36" name="Create second satistica form" color="#8cb6ce" meeting="false" start="2017-04-03" duration="1" complete="0" expand="true"/>
-            <task id="35" name="Create thrid satistica form" color="#8cb6ce" meeting="false" start="2017-04-06" duration="1" complete="0" expand="true"/>
+        <task id="30" name="Customer satisfaction" color="#000000" meeting="false" start="2016-12-10" duration="118" complete="0" expand="true">
+            <depend id="46" type="2" difference="0" hardness="Strong"/>
+            <task id="32" name="Create first satistica form" color="#8cb6ce" meeting="false" start="2016-12-10" duration="1" complete="0" expand="true">
+                <depend id="36" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="36" name="Create second satistica form" color="#8cb6ce" meeting="false" start="2017-04-02" duration="1" complete="0" thirdDate="2017-04-02" thirdDate-constraint="1" expand="true">
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="35" name="Create thrid satistica form" color="#8cb6ce" meeting="false" start="2017-04-06" duration="1" complete="0" thirdDate="2017-04-06" thirdDate-constraint="1" expand="true"/>
         </task>
-        <task id="37" name="Reporting" meeting="false" start="2017-02-25" duration="58" complete="0" expand="true">
-            <task id="39" name="Setup LaTeX template" color="#8cb6ce" meeting="false" start="2017-02-25" duration="5" complete="0" expand="true"/>
-            <task id="50" name="Introduction chapter" color="#8cb6ce" meeting="false" start="2017-03-06" duration="1" complete="0" expand="true"/>
-            <task id="41" name="Aim &amp; Objectives chapter" color="#8cb6ce" meeting="false" start="2017-03-07" duration="12" complete="0" expand="true"/>
-            <task id="43" name="Project planning chapter" color="#8cb6ce" meeting="false" start="2017-03-13" duration="5" complete="0" expand="true"/>
-            <task id="48" name="Market analysis chapter" color="#8cb6ce" meeting="false" start="2017-03-27" duration="4" complete="0" expand="true"/>
-            <task id="45" name="Project management chapter" color="#8cb6ce" meeting="false" start="2017-04-07" duration="4" complete="0" expand="true"/>
-            <task id="46" name="Customer satisfaction chapter" color="#8cb6ce" meeting="false" start="2017-04-10" duration="3" complete="0" expand="true"/>
-            <task id="49" name="Development chapter" color="#8cb6ce" meeting="false" start="2017-04-17" duration="7" complete="0" expand="true"/>
-            <task id="51" name="Conclusion chapter" color="#8cb6ce" meeting="false" start="2017-04-21" duration="1" complete="0" expand="true"/>
+        <task id="37" name="Reporting" color="#000000" meeting="false" start="2016-12-10" duration="136" complete="0" expand="true">
+            <task id="39" name="Setup LaTeX template" color="#8cb6ce" meeting="false" start="2016-12-10" duration="5" complete="0" expand="true">
+                <depend id="50" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="50" name="Introduction chapter" color="#8cb6ce" meeting="false" start="2016-12-15" duration="1" complete="0" expand="true"/>
+            <task id="41" name="Aim &amp; Objectives chapter" color="#8cb6ce" meeting="false" start="2017-03-21" duration="3" complete="0" thirdDate="2017-03-21" thirdDate-constraint="1" expand="true"/>
+            <task id="43" name="Project planning chapter" color="#8cb6ce" meeting="false" start="2016-12-16" duration="5" complete="0" thirdDate="2016-12-16" thirdDate-constraint="1" expand="true"/>
+            <task id="48" name="Market analysis chapter" color="#8cb6ce" meeting="false" start="2017-03-27" duration="3" complete="0" thirdDate="2017-03-27" thirdDate-constraint="1" expand="true"/>
+            <task id="45" name="Project management chapter" color="#8cb6ce" meeting="false" start="2017-04-07" duration="4" complete="0" thirdDate="2017-04-07" thirdDate-constraint="1" expand="true"/>
+            <task id="46" name="Customer satisfaction chapter" color="#8cb6ce" meeting="false" start="2017-04-07" duration="3" complete="0" thirdDate="2017-04-07" thirdDate-constraint="1" expand="true"/>
+            <task id="49" name="Development chapter" color="#8cb6ce" meeting="false" start="2017-04-21" duration="3" complete="0" thirdDate="2017-04-21" thirdDate-constraint="1" expand="true">
+                <depend id="51" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="51" name="Conclusion chapter" color="#8cb6ce" meeting="false" start="2017-04-24" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="57" name="Pre-development" meeting="false" start="2017-04-03" duration="8" complete="0" expand="true">
-            <task id="59" name="Define technical stack" color="#8cb6ce" meeting="false" start="2017-04-03" duration="1" complete="0" expand="true"/>
-            <task id="68" name="System analysis" color="#8cb6ce" meeting="false" start="2017-04-04" duration="2" complete="0" expand="true"/>
-            <task id="72" name="System design" color="#8cb6ce" meeting="false" start="2017-04-06" duration="2" complete="0" expand="true"/>
-            <task id="61" name="Setup dev environment" color="#8cb6ce" meeting="false" start="2017-04-10" duration="1" complete="0" expand="true"/>
-            <task id="63" name="Setup version control" color="#8cb6ce" meeting="false" start="2017-04-10" duration="1" complete="0" expand="true"/>
+        <task id="57" name="Pre-development" color="#000000" meeting="false" start="2017-04-03" duration="6" complete="0" expand="true">
+            <depend id="64" type="2" difference="0" hardness="Strong"/>
+            <depend id="74" type="2" difference="0" hardness="Strong"/>
+            <depend id="76" type="2" difference="0" hardness="Strong"/>
+            <depend id="78" type="2" difference="0" hardness="Strong"/>
+            <task id="59" name="Define technical stack" color="#8cb6ce" meeting="false" start="2017-04-03" duration="1" complete="0" thirdDate="2017-04-03" thirdDate-constraint="1" expand="true">
+                <depend id="63" type="2" difference="0" hardness="Strong"/>
+                <depend id="68" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="68" name="System analysis" color="#8cb6ce" meeting="false" start="2017-04-04" duration="2" complete="0" expand="true">
+                <depend id="72" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="72" name="System design" color="#8cb6ce" meeting="false" start="2017-04-06" duration="2" complete="0" expand="true">
+                <depend id="61" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="61" name="Setup dev environment" color="#8cb6ce" meeting="false" start="2017-04-08" duration="1" complete="0" expand="true"/>
+            <task id="63" name="Setup version control" color="#8cb6ce" meeting="false" start="2017-04-04" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="64" name="Development process" meeting="false" start="2017-04-12" duration="8" complete="0" expand="true">
-            <task id="74" name="Data storage" color="#8cb6ce" meeting="false" start="2017-04-12" duration="2" complete="0" expand="true"/>
-            <task id="76" name="Business logic" color="#8cb6ce" meeting="false" start="2017-04-12" duration="4" complete="0" expand="true"/>
-            <task id="78" name="User interface" color="#8cb6ce" meeting="false" start="2017-04-15" duration="3" complete="0" expand="true"/>
-            <task id="80" name="Testing" color="#8cb6ce" meeting="false" start="2017-04-17" duration="3" complete="0" expand="true"/>
+        <task id="64" name="Development process" color="#000000" meeting="false" start="2017-04-09" duration="12" complete="0" expand="true">
+            <depend id="49" type="2" difference="0" hardness="Strong"/>
+            <task id="74" name="Data storage" color="#8cb6ce" meeting="false" start="2017-04-09" duration="2" complete="0" expand="true">
+                <depend id="80" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="76" name="Business logic" color="#8cb6ce" meeting="false" start="2017-04-11" duration="4" complete="0" thirdDate="2017-04-11" thirdDate-constraint="1" expand="true">
+                <depend id="80" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="78" name="User interface" color="#8cb6ce" meeting="false" start="2017-04-15" duration="3" complete="0" thirdDate="2017-04-15" thirdDate-constraint="1" expand="true">
+                <depend id="80" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="80" name="Testing" color="#8cb6ce" meeting="false" start="2017-04-18" duration="3" complete="0" expand="true"/>
         </task>
     </tasks>
-    <resources/>
-    <allocations/>
+    <resources>
+        <resource id="0" name="Markus Just" function="Default:1" contacts="markusjust@gmx.net" phone="01722353360">
+            <rate name="standard" value="100"/>
+        </resource>
+        <resource id="1" name="Wojtek Lesnianski" function="1" contacts="" phone="">
+            <rate name="standard" value="80"/>
+        </resource>
+        <resource id="2" name="Timo Acquistapace" function="2" contacts="" phone="">
+            <rate name="standard" value="80"/>
+        </resource>
+        <resource id="3" name="Simon Schneider" function="3" contacts="" phone="">
+            <rate name="standard" value="80"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="13" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="53" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="55" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="28" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="43" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="51" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="41" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="108" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="32" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="36" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="39" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="48" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="46" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="51" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="59" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="68" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="63" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="74" resource-id="2" function="2" responsible="false" load="50.0"/>
+        <allocation task-id="76" resource-id="2" function="2" responsible="true" load="50.0"/>
+        <allocation task-id="78" resource-id="2" function="2" responsible="true" load="50.0"/>
+        <allocation task-id="27" resource-id="3" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="3" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="51" resource-id="3" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="72" resource-id="3" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="61" resource-id="3" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="74" resource-id="3" function="3" responsible="true" load="50.0"/>
+        <allocation task-id="76" resource-id="3" function="3" responsible="false" load="50.0"/>
+        <allocation task-id="78" resource-id="3" function="3" responsible="false" load="50.0"/>
+        <allocation task-id="80" resource-id="3" function="3" responsible="true" load="50.0"/>
+    </allocations>
     <vacations/>
-    <previous/>
+    <previous>
+        <previous-tasks name="Baseplan">
+            <previous-task id="3" start="2016-12-01" duration="9" meeting="false" super="true"/>
+            <previous-task id="13" start="2016-12-01" duration="1" meeting="false" super="false"/>
+            <previous-task id="53" start="2016-12-02" duration="1" meeting="false" super="false"/>
+            <previous-task id="5" start="2016-12-03" duration="1" meeting="false" super="false"/>
+            <previous-task id="6" start="2016-12-04" duration="1" meeting="false" super="false"/>
+            <previous-task id="15" start="2016-12-09" duration="1" meeting="false" super="false"/>
+            <previous-task id="55" start="2016-12-05" duration="1" meeting="false" super="false"/>
+            <previous-task id="108" start="2016-12-05" duration="2" meeting="false" super="false"/>
+            <previous-task id="19" start="2016-12-10" duration="92" meeting="false" super="true"/>
+            <previous-task id="21" start="2017-03-08" duration="4" meeting="false" super="false"/>
+            <previous-task id="28" start="2016-12-13" duration="3" meeting="false" super="false"/>
+            <previous-task id="23" start="2016-12-10" duration="3" meeting="false" super="false"/>
+            <previous-task id="27" start="2016-12-13" duration="4" meeting="false" super="false"/>
+            <previous-task id="30" start="2017-03-30" duration="8" meeting="false" super="true"/>
+            <previous-task id="32" start="2017-03-30" duration="1" meeting="false" super="false"/>
+            <previous-task id="36" start="2017-04-02" duration="1" meeting="false" super="false"/>
+            <previous-task id="35" start="2017-04-06" duration="1" meeting="false" super="false"/>
+            <previous-task id="37" start="2016-12-02" duration="144" meeting="false" super="true"/>
+            <previous-task id="39" start="2016-12-02" duration="5" meeting="false" super="false"/>
+            <previous-task id="50" start="2016-12-07" duration="1" meeting="false" super="false"/>
+            <previous-task id="41" start="2017-03-21" duration="3" meeting="false" super="false"/>
+            <previous-task id="43" start="2016-12-16" duration="5" meeting="false" super="false"/>
+            <previous-task id="48" start="2017-03-27" duration="3" meeting="false" super="false"/>
+            <previous-task id="45" start="2017-04-07" duration="4" meeting="false" super="false"/>
+            <previous-task id="46" start="2017-04-07" duration="3" meeting="false" super="false"/>
+            <previous-task id="49" start="2017-04-21" duration="3" meeting="false" super="false"/>
+            <previous-task id="51" start="2017-04-24" duration="1" meeting="false" super="false"/>
+            <previous-task id="57" start="2017-04-03" duration="8" meeting="false" super="true"/>
+            <previous-task id="59" start="2017-04-03" duration="1" meeting="false" super="false"/>
+            <previous-task id="68" start="2017-04-04" duration="2" meeting="false" super="false"/>
+            <previous-task id="72" start="2017-04-06" duration="2" meeting="false" super="false"/>
+            <previous-task id="61" start="2017-04-10" duration="1" meeting="false" super="false"/>
+            <previous-task id="63" start="2017-04-10" duration="1" meeting="false" super="false"/>
+            <previous-task id="64" start="2017-04-11" duration="10" meeting="false" super="true"/>
+            <previous-task id="74" start="2017-04-12" duration="2" meeting="false" super="false"/>
+            <previous-task id="76" start="2017-04-11" duration="4" meeting="false" super="false"/>
+            <previous-task id="78" start="2017-04-15" duration="3" meeting="false" super="false"/>
+            <previous-task id="80" start="2017-04-18" duration="3" meeting="false" super="false"/>
+        </previous-tasks>
+    </previous>
     <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Designer"/>
+        <role id="2" name="Software Architect"/>
+        <role id="3" name="Software Engineer"/>
+    </roles>
 </project>
