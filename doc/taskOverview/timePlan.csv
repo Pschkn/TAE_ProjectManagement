@@ -1,0 +1,46 @@
+ID,Vorgang,Anfang,Ende,Dauer,Fortschritt,Kosten,Verantwortlich,Vorgänger,GliederungsNr.,Ressourcen,WWW-Link,Notizen
+3,Initial planning,01.12.16,09.12.16,9,0,920.0,,,1,,,
+13,"  Specify customer requirements",01.12.16,01.12.16,1,0,180.0,Markus Just,,1.1,Markus Just;Wojtek Lesnianski,,
+53,"  Define scope",02.12.16,02.12.16,1,0,100.0,Markus Just,13,1.2,Markus Just,,
+5,"  Define tasks",03.12.16,03.12.16,1,0,100.0,Markus Just,13;53,1.3,Markus Just,,
+6,"  Create time plan",04.12.16,04.12.16,1,0,100.0,Markus Just,5,1.4,Markus Just,,
+15,"  Create resource plan",09.12.16,09.12.16,1,0,100.0,Markus Just,5,1.5,Markus Just,,
+55,"  Define task tracking mechanism",05.12.16,05.12.16,1,0,100.0,Markus Just,5;6,1.6,Markus Just,,
+108,"  Resouce allocation",05.12.16,07.12.16,3,0,240.0,Wojtek Lesnianski,5,1.7,Wojtek Lesnianski,,
+19,Project management,10.12.16,11.03.17,92,0,1080.0,,3,2,,,
+21,"  Market analysis",08.03.17,11.03.17,4,0,320.0,Timo Acquistapace,3,2.1,Timo Acquistapace,,
+28,"  Process flow and critical path",10.12.16,12.12.16,3,0,300.0,Markus Just,3,2.2,Markus Just,,
+23,"  Cost analysis",10.12.16,12.12.16,3,0,300.0,Markus Just,3,2.3,Markus Just,,
+27,"  Risk analysis",10.12.16,11.12.16,2,0,160.0,Simon Schneider,3,2.4,Simon Schneider,,
+30,Customer satisfaction,10.12.16,06.04.17,118,0,240.0,,3,3,,,
+32,"  Create first satistica form",10.12.16,10.12.16,1,0,80.0,Timo Acquistapace,3,3.1,Timo Acquistapace,,
+36,"  Create second satistica form",02.04.17,02.04.17,1,0,80.0,Timo Acquistapace,3;32,3.2,Timo Acquistapace,,
+35,"  Create thrid satistica form",06.04.17,06.04.17,1,0,80.0,Timo Acquistapace,3;36,3.3,Timo Acquistapace,,
+37,Reporting,10.12.16,24.04.17,136,0,3080.0,,3,4,,,
+39,"  Setup LaTeX template",10.12.16,14.12.16,5,0,400.0,Timo Acquistapace,3,4.1,Timo Acquistapace,,
+50,"  Introduction chapter",15.12.16,15.12.16,1,0,0,,13;39;53,4.2,,,
+41,"  Aim & Objectives chapter",21.03.17,23.03.17,3,0,240.0,Wojtek Lesnianski,13;53,4.3,Wojtek Lesnianski,,
+43,"  Project planning chapter",16.12.16,20.12.16,5,0,500.0,Markus Just,3,4.4,Markus Just,,
+48,"  Market analysis chapter",27.03.17,29.03.17,3,0,240.0,Timo Acquistapace,21,4.5,Timo Acquistapace,,
+45,"  Project management chapter",07.04.17,10.04.17,4,0,720.0,Markus Just,19,4.6,Markus Just;Wojtek Lesnianski,,
+46,"  Customer satisfaction chapter",07.04.17,09.04.17,3,0,240.0,Timo Acquistapace,30,4.7,Timo Acquistapace,,
+49,"  Development chapter",21.04.17,23.04.17,3,0,480.0,Simon Schneider,64,4.8,Timo Acquistapace;Simon Schneider,,
+51,"  Conclusion chapter",24.04.17,24.04.17,1,0,260.0,Markus Just,49,4.9,Markus Just;Timo Acquistapace;Simon Schneider,,
+57,Pre-development,03.04.17,08.04.17,6,0,560.0,,3,5,,,
+59,"  Define technical stack",03.04.17,03.04.17,1,0,80.0,Timo Acquistapace,3;13,5.1,Timo Acquistapace,,
+68,"  System analysis",04.04.17,05.04.17,2,0,160.0,Timo Acquistapace,59,5.2,Timo Acquistapace,,
+72,"  System design",06.04.17,07.04.17,2,0,160.0,Simon Schneider,68,5.3,Simon Schneider,,
+61,"  Setup dev environment",08.04.17,08.04.17,1,0,80.0,Simon Schneider,72,5.4,Simon Schneider,,
+63,"  Setup version control",04.04.17,04.04.17,1,0,80.0,Timo Acquistapace,59,5.5,Timo Acquistapace,,
+64,Development process,09.04.17,20.04.17,12,0,840.0,,13;57,6,,,
+74,"  Data storage",09.04.17,10.04.17,2,0,160.0,Simon Schneider,57,6.1,Timo Acquistapace;Simon Schneider,,
+76,"  Business logic",11.04.17,14.04.17,4,0,320.0,Timo Acquistapace,57,6.2,Timo Acquistapace;Simon Schneider,,
+78,"  User interface",15.04.17,17.04.17,3,0,240.0,Timo Acquistapace,57,6.3,Timo Acquistapace;Simon Schneider,,
+80,"  Testing",18.04.17,20.04.17,3,0,120.0,Simon Schneider,74;76;78,6.4,Simon Schneider,,
+
+
+ID,Ressource,Rolle,E-Mail,Telefon,Zugewiesene Rolle,Standardpreis
+0,Markus Just,Default:1,markusjust@gmx.net,01722353360,,100
+1,Wojtek Lesnianski,Designer,,,,80
+2,Timo Acquistapace,Software Architect,,,,80
+3,Simon Schneider,Software Engineer,,,,80
