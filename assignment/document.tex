@@ -22,6 +22,8 @@
 
 \usepackage{textcomp}
 
+\usepackage{appendix}
+
 %Diagramme
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
@@ -79,12 +81,12 @@ figurewithin=section,format=hang]{caption}
 \vspace{-1cm}
 \input{contents/chapters/aimsObjectivesOutcome.tex}
 
-\chapter{Requirement Analysis}
-\vspace{-1cm}
-\epigraph{\textbf{Author: } Markus Just, Wojciech Lesnianski}
-
-\vspace{-1cm}
-\input{contents/chapters/requirements.tex}
+% \chapter{Requirement Analysis}
+% \vspace{-1cm}
+% \epigraph{\textbf{Author: } Markus Just, Wojciech Lesnianski}
+% 
+% \vspace{-1cm}
+% \input{contents/chapters/requirements.tex}
 
 \chapter{Specification}
 \vspace{-1cm}
@@ -149,6 +151,12 @@ figurewithin=section,format=hang]{caption}
 Wojciech Lesnianski}
 
 \input{contents/chapters/conclusion.tex}
+
+\newpage
+
+\setcounter{page}{1}
+\pagenumbering{Roman} 
+\input{contents/chapters/appendix.tex}
 
 \input{contents/Registers.tex}
 
