@@ -53,7 +53,7 @@ figurewithin=section,format=hang]{caption}
 \begin{document}
 \onehalfspacing
 \setlength\epigraphrule{0pt}
-\setlength{\epigraphwidth}{0.8\textwidth}
+\setlength{\epigraphwidth}{0.9\textwidth}
 \renewcommand{\epigraphflush}{flushleft}
 
 \bibliography{resources}
@@ -62,16 +62,18 @@ figurewithin=section,format=hang]{caption}
 
 \tableofcontents 
 \newpage
-\input{contents/acronyms.tex}
+%\input{contents/acronyms.tex}
+%\newpage
 %\setcounter{chapter}{2}
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
 \chapter{Introducing TSMW}
 \vspace{-1cm}
-\epigraph{\textbf{Author: } Wojciech Lesnianski}
+\epigraph{\textbf{Author: } Wojciech Lesnianski \newline
+\textbf{Contributors:} Markus Just, Timo Acquistapace, Simon Schneider }
 
-\vspace{-1cm}
+%\vspace{-1cm}
 \input{contents/chapters/intro.tex}
 
 \chapter{Aims, Objectives and expected Outcome}
@@ -90,16 +92,16 @@ figurewithin=section,format=hang]{caption}
 
 \chapter{Specification}
 \vspace{-1cm}
-\epigraph{\textbf{Author: } Wojciech Lesnianski}
+\epigraph{\textbf{Author: } Wojciech Lesnianski \newline
+\textbf{Contributor:} Markus Just}
 
-\vspace{-1cm}
 \input{contents/chapters/specification.tex}
 
 \chapter{Project Plan}
 \vspace{-1cm}
-\epigraph{\textbf{Author: } Markus Just}
+\epigraph{\textbf{Author: } Markus Just \newline
+\textbf{Contributor:} Wojciech Lesnianski}
 
-\vspace{-1cm}
 \input{contents/chapters/projectPlan.tex}
 
 \chapter{Resource Allocation}
